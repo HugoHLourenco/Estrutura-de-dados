@@ -5,7 +5,7 @@ export default class Deque{
         this.#data = []
     }
 
-    invertFront(val){
+    insertFront(val){
         this.#data.unshift(val)
     }
 
@@ -29,7 +29,7 @@ export default class Deque{
         return this.#data[this.#data.length - 1]
     }
 
-    get inEmpty(){
+    get isEmpty(){
         return this.#data.length === 0 
     }
 
